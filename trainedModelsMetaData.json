@@ -1,0 +1,54 @@
+{
+    "mainModel": {
+        "inputNodeSize": 259,
+        "outputNodeSize": 21
+    },
+    "mainModel_greetings": {
+        "inputNodeSize": 20,
+        "outputNodeSize": 4
+    },
+    "mainModel_greetings_chronological_greetings": {
+        "inputNodeSize": 4,
+        "outputNodeSize": 3
+    },
+    "mainModel_about_organization": {
+        "inputNodeSize": 91,
+        "outputNodeSize": 8
+    },
+    "mainModel_about_organization_location": {
+        "inputNodeSize": 29,
+        "outputNodeSize": 2
+    },
+    "mainModel_about_organization_leaders": {
+        "inputNodeSize": 39,
+        "outputNodeSize": 14
+    },
+    "mainModel_about_organization_partners": {
+        "inputNodeSize": 25,
+        "outputNodeSize": 5
+    },
+    "mainModel_teams": {
+        "inputNodeSize": 22,
+        "outputNodeSize": 5
+    },
+    "mainModel_products": {
+        "inputNodeSize": 51,
+        "outputNodeSize": 18
+    },
+    "mainModel_designations": {
+        "inputNodeSize": 31,
+        "outputNodeSize": 7
+    },
+    "mainModel_things_to_be_learned": {
+        "inputNodeSize": 37,
+        "outputNodeSize": 3
+    },
+    "mainModel_clubs": {
+        "inputNodeSize": 20,
+        "outputNodeSize": 5
+    },
+    "mainModel_career_options": {
+        "inputNodeSize": 45,
+        "outputNodeSize": 10
+    }
+}

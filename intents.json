@@ -1,0 +1,1244 @@
+{
+    "intents" : [
+        {
+            "tag"      : "greetings",
+            "patterns" : ["Hi", "Hello", "Hey there", "Is anyone there?", "Good morning", "Good Afternoon", "Good evening", "Good day", "How are you?", "Is everything fine?", "Are you doing good?", "Are you doing ok?", "Are you doing okay?", "How is your work?"],
+            "responses": [
+                {
+                    "tag"      : "general greetings",
+                    "patterns" : ["Hi", "Hello", "Hey there", "good day"],
+                    "responses": ["Hi", "Hello", "Hey there", "Hi, how are you?", "Hello, How are you?", "Hey, how are you?", "Hi, how are you doing?", "Hello, how are you doing", "Hey, how are you doing?", "Hi, how is your work?", "Hello, how is your work?", "Hey, how is your work?", "Hello, How is your day?", "Hey, how is your day?", "Hi, how is your day?"]
+                },
+                {
+                    "tag"      : "chronological greetings",
+                    "patterns" : ["Good morning", "Good evening", "Good afternoon"],
+                    "responses": [
+                        {
+                            "tag"      : "morning",
+                            "patterns" : ["Good morning"],
+                            "responses": ["Good morning"]
+                        },
+                        {
+                            "tag"      : "evening",
+                            "patterns" : ["Good evening"],
+                            "responses": ["Good evening"]
+                        },
+                        {
+                            "tag"      : "afternoon",
+                            "patterns" : ["Good afternoon"],
+                            "responses": ["Good afternoon"]
+                        }
+                    ]
+                },
+                {
+                    "tag"      : "questions",
+                    "patterns" : ["How are you?", "How is your day", "How are you doing?"],
+                    "responses": ["I am fine", "I am good", "Fine", "Good", "I am doing great", "I am doing good", "I am well"]
+                },
+                {
+                    "tag"      : "neutral statements",
+                    "patterns" : ["I am fine", "I am good", "I am well", "I am doing great", "I am doing good", "Fine", "good", "great"],
+                    "responses": ["Great, good to know."]
+                }
+            ]
+        },
+        {
+            "tag"      : "help",
+            "patterns" : ["I need your help", "Can you help me?", "I have a problem", "Can you please give a solution to my problem?"],
+            "responses": ["How can I help you?", "I am at your service. Ask me", "May I know your problem?", "What help do you need?", "I am at your service. How can I help you?"]
+        },
+        {
+            "tag"      : "thanks",
+            "patterns" : ["Thanks", "Thank you", "That's helpful", "Thank you very much", "Thanks your help"],
+            "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        },
+        {
+            "tag"      : "goodbye",
+            "patterns" : ["Bye", "See you later", "Goodbye"],
+            "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        },
+        {
+            "tag"      : "about organization",
+            "patterns" : ["tell me about the organization", "Tell me something about the organization", "organization", "headquarters", "Tell me about the headquarters of the company", "Tell me something about the headquarters of the organization", "Where is the organization's headquarters is situated?", "Where is the organization's headquarters is located?", "I would like to know about the organization", "What is the revenue of the company?", "What is the net income of the company?", "Facts about the organization", "organizational facts", "Tell me about the motto of the organization", "Tell me about the motto", "Tell me the key goals", "What is the motto of the organization?", "What is the key goal of the organization?", "Tell me the tag line of the company",  "What is the motto of the company?", "What is the key goal of the company?", "Where is the company's headquarters situated?", "What is the company's headquarters located?", "Tell me about the leaders", "Tell me about the leaders of the unisys", "Who are all the leaders of Unisys?", "Tell me about the CEO", "Tell me about the Chief Executive Officer", "Tell me about the President", "Tell me about the COO", "Tell me about the Chief Operating Officer", "Tell me about the CTO", "Tell me about the Chief Technology Officer", "Tell me about the GM", "Tell me about the General Manager", "Tell me about the CHO/CHRO", "Tell me about the Chief Human Resources Officer", "Tell me about the CSO/CSIO", "Tell me about the Chief Security and Infrastructure Officer", "Tell me about the CMO", "Tell me about the Chief Marketing Officer", "Tell me about the CRO", "Tell me about the Chief Revenue Officer", "Tell me about the CFO", "Tell me about the Chief Financial Officer", "Tell me about the Vice President", "Tell me about the Senior Vice President", "Tell me about the Executive Vice President", "What are all the locations does Unisys operate?", "Tell me the various locations where Unisys operates", "What are all the various locations does Unisys operate?", "Where does Unisys operate in India", "What are all the locations Unisys operate in India?", "How the organization is spread across the globe?", "Unisys facilities", "Where does the organization have their facilities in the India?", "In which locations, does the organization have their facilities?", "Where do we have Unisys offices in India?", "Unisys offices at various locations across globe", "Unisys facilities at various locations across globe", "Unisys offices at various locations in India", "Unisys facilities at various locations in India", "Who are the clients of Unisys?", "Who are the clients of the organization", "Who are the clients of the company?","Tell me about the clients of the company", "Tell me about the clients of the Organization","clients",  "What is the annual earnings of the company?", "What is the revenue of the organization?", "What is the net income of the organization?", "What is the annual earnings of the organization?", "Who are the partners of Unisys?", "What are the companies in tie-up with Unisys?", "What are the companies in partnership with Unisys?", "What are the companies in alliance with unisys?", "What are the companies in association with unisys?", "What are the companies in a business partnership with Unisys?", "What are the companies that are doing business with Unisys?", "What are the companies in business alliance with Unisys?", "Who are the partners of Unisys?", "What are the companies in tie-up with Unisys?", "What are the companies in partnership with Unisys?", "What are the companies in alliance with unisys?", "What are the companies in association with unisys?", "What are the companies in a business partnership with Unisys?", "What are the companies that are doing business with Unisys?", "What are the companies in business alliance with Unisys?", "How unisys is in partnership with AWS?", "Explain the alliance of Unisys with AWS", "Explain the partnership of unisys with AWS", "How unisys is in alliance with AWS?", "How unisys is in partnership with ServiceNow?", "Explain the alliance of Unisys with ServiceNow", "Explain the partnership of unisys with ServiceNow", "How unisys is in alliance with ServiceNow?", "How unisys is in partnership with Microsoft?", "Explain the alliance of Unisys with Microsoft", "Explain the partnership of unisys with Microsoft", "How unisys is in alliance with Microsoft?", "How unisys is in partnership with Dell Technologies?", "Explain the alliance of Unisys with Dell Technologies", "Explain the partnership of unisys with Dell Technologies", "How unisys is in alliance with Dell Technologies?" ],
+            "responses": [
+                {
+                    "tag"      : "organization",
+                    "patterns" : ["tell me about the organization", "Tell me something about the organization", "organization", "I would like to know about the organization", "Facts about the organization", "organizational facts"],
+                    "responses": ["Unisys Corporation is an American global information technology company based in Blue Bell, Pennsylvania, that provides IT services, software, and technology. It is the legacy proprietor of the Burroughs and UNIVAC line of computers, formed when the former bought the latter. It was founded in 1986. With 17,500 employees and Mr. Peter Altabef as the current CEO, the company's annual revenue was 2.026 Billion USD by 2020. With head quarters at Blue Bell in Pennsylvania, United States, the company operates at various places all around the world."],
+                    "links"    : [
+                        {
+                            "websites": [
+                                {
+                                    "link": "https://www.linkedin.com/company/unisys/",
+                                    "text": "LinkedIn Account of Unisys"
+                                },
+                                {
+                                    "link": "https://www.unisys.com/",
+                                    "text" : "Official Website of Unisys"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag"      : "headquarters",
+                    "patterns" : ["Where is the company's headquarters situated?", "Where is the company's headquarters located?", "headquarters", "Tell me about the headquarters of the company", "Tell me something about the headquarters of the organization", "Where is the organization's headquarters is situated?", "Where is the organization's headquarters is located?"],
+                    "responses": ["The Headquarters of the company is at Blue Bell in Pennsylvania, United States", "At Blue Bell in Pennsylvania, United States", "Organization's headquarters is at Blue Bell in Pennsylvania, United States", "Headquarters of the organization is at Blue Bell, in Pennsylvania, United States"],
+                    "links"    : [
+                        {
+                            "image": ["https://en.wikipedia.org/wiki/File:Unisysoffice.JPG"]
+                        }
+                    ]
+                },
+                {
+                    "tag"      : "location",
+                    "patterns" : ["What are all the locations does Unisys operate?", "Tell me the various locations where Unisys operates", "What are all the various locations does Unisys operate?", "Where does Unisys operate in India", "What are all the locations Unisys operate in India?", "How the organization is spread across the globe?", "Unisys facilities", "Where does the organization have their facilities in the India?", "In which locations, does the organization have their facilities?", "Where do we have Unisys offices in India?"],
+                    "responses": [
+                        {
+                            "tag"      : "across globe",
+                            "patterns" : ["What are all the locations does Unisys operate?", "Tell me various locations where Unisys operates", "What are all the various locations does Unisys operate?", "How the organization is spread across the globe?", "Unisys facilities", "In which locations, does the organization have their facilities?", "Unisys offices at various locations across globe", "Unisys facilities at various locations across globe"],
+                            "responses": ["Unisys Corporation has spread across 30 countries operating in 83 locations", "Unisys Corporation operates in 83 facilities across 30 countries", "Unisys Corporation operates in 83 facilities across the following 30 countries, Argentina, Australia, Austria, Belgium, Brazil, Canada, China, Colombia, Costa Rica, France, Hong Kong, Germany, Hungary, India, Japan, Luxembourg, Malaysia, Mexico, Netherland, New Zealand, Norway, Peru, Philippines, Singapore, Spain, Switzerland, Taiwan, Thailand, UK and USA"],
+                            "links"    : [
+                                {
+                                    "websites": [
+                                        {
+                                            "link":"https://www.unisys.com/about-us/locations",
+                                            "text":"Information about the facilities from Unisys Official Website"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "tag"      : "In India",
+                            "patterns" : ["Where does Unisys operate in India", "What are all the locations Unisys operate in India?", "Where does the organization have their facilities in the India?", "Where do we have Unisys offices in India?", "Unisys offices at various locations in India", "Unisys facilities at various locations in India" ],
+                            "responses": ["Unisys operates in Bangalore and Hyderabad with 3 facilities in Bangalore and 1 in Hyderabad", "In India, Unisys has facilities in Bangalore and Hyderabad", "In India, Unisys functions in 2 locations, Bangalore and Hyderabad, with 3 branches in Bangalore and 1 in Hyderabad"],
+                            "links"    : [
+                                {
+                                    "websites": [
+                                        {
+                                            "link" : "https://www.unisys.com/about-us/locations?TermStoreId=b7e518d0-1276-44e9-a54d-912066de1ad5&TermSetId=58e9eea9-61cb-4d76-8cdb-8077ed479250&TermId=f8a3c9dd-94ce-4c2c-af5c-fb478f813ed1",
+                                            "text" : "Information about India facilities from Unisys Official Website"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag"      : "leaders",
+                    "patterns" : ["Tell me about the leaders", "Tell me about the leaders of the unisys", "Who are all the leaders of Unisys?", "Tell me about the CEO", "Tell me about the Chief Executive Officer", "Tell me about the President", "Tell me about the COO", "Tell me about the Chief Operating Officer", "Tell me about the CTO", "Tell me about the Chief Technology Officer", "Tell me about the GM", "Tell me about the General Manager", "Tell me about the CHO/CHRO", "Tell me about the Chief Human Resources Officer", "Tell me about the CSO/CSIO", "Tell me about the Chief Security and Infrastructure Officer", "Tell me about the CMO", "Tell me about the Chief Marketing Officer", "Tell me about the CRO", "Tell me about the Chief Revenue Officer", "Tell me about the CFO", "Tell me about the Chief Financial Officer", "Tell me about the Vice President", "Tell me about the Senior Vice President", "Tell me about the Executive Vice President"],
+                    "responses": [
+                        {
+                            "tag"      : "general statements",
+                            "patterns" : ["Tell me about the leaders", "Tell me about the leaders of the unisys", "Who are all the leaders of Unisys?"],
+                            "responses": ["The current CEO of Unisys Organization is Mr. Peter Altabef, who was officially named as CEO from January 1, 2015. Peter A. Altabef has served as chair of the board of Unisys Corporation since April 2018, and as CEO of Unisys since January 2015. He also served as president of the company from September 2015 to March 2020. Please visit the official website of Unisys Organization for further details about the leaders"],
+                            "links"    : [
+                                {
+                                    "websites": [
+                                        {
+                                            "link" : "https://www.unisys.com/about-us/leadership",
+                                            "text" : "Information about the leaders from Unisys Official Website"
+                                        },
+                                        {
+                                            "link" : "https://www.unisys.com/about-us/leadership/peter-altabef",
+                                            "text" : "Information about the CEO from Unisys Official Website"
+                                        }
+                                    ],
+                                    "image"   : ["https://assets.unisys.com/PublishingImages/Global/CorporateOfficers/Officer_PeterAltabef320x320.jpg"]
+                                }
+                            ]
+                        },
+                        {
+                            "tag"      : "CEO",
+                            "patterns" : ["Tell me about the CEO", "Tell me about the Chief Executive Officer"],
+                            "responses": ["Chief Executive Officer - Peter Altabef.\nPeter A. Altabef has served as chair of the board of Unisys Corporation since April 2018, and as CEO of Unisys since January 2015. He also served as president of the company from September 2015 to March 2020."],
+                            "links"    : [
+                                {
+                                    "image"   : ["https://assets.unisys.com/PublishingImages/Global/CorporateOfficers/Officer_PeterAltabef320x320.jpg"],
+                                    "websites": [
+                                        {
+                                            "link" : "https://www.unisys.com/about-us/leadership",
+                                            "text" : "Information about the leaders from Unisys Official Website"
+                                        },
+                                        {
+                                            "link" : "https://www.unisys.com/about-us/leadership/peter-altabef",
+                                            "text" : "Information about the CEO from Unisys Official Website"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "tag"      : "COO",
+                            "patterns" : ["Tell me about the COO", "Tell me about the Chief Operating Officer"],
+                            "responses": ["President and Chief Operating Officer - Eric Hutto. \n Eric Hutto was elected president and chief operating officer effective March 2020. From September 2015 to March 2020, he served as senior vice president and president, Enterprise Solutions. Eric joined the company in April 2015 and previously served as vice president/general manager, U.S. & Canada, Unisys Enterprise Solutions. Eric leads the company’s business worldwide and is responsible for sales, client relationships, service delivery and portfolio management."],
+                            "links"    : [
+                                {
+                                    "image"   : ["https://assets.unisys.com/PublishingImages/Global/CorporateOfficers/Officer_EricHutto320x320.jpg?v=2"],
+                                    "websites": [{
+                                        "link" : "https://www.unisys.com/about-us/leadership/eric-hutto",
+                                        "text" : "Information about the COO from Unisys Official Website"
+                                    }]
+                                }
+                            ]
+                        },
+                        {
+                            "tag"      : "CSO",
+                            "patterns" : ["Tell me about the CSO", "Tell me about the Chief Security and Infrastructure Officer"],
+                            "responses": ["Senior Vice President and Chief Security and Infrastructure Officer - Mathew Newfield. \n Mathew Newfield is senior vice president and Chief Security and Infrastructure Officer (CSIO) of Unisys. The CSIO organization comprises the former Unisys Information Technology (UIT) and Chief Information Security Office (CISO) organizations. Mathew joined Unisys in March 2018 as Chief Information Security Officer. He has more than 19 years of experience in Information Technology, with a focus on security, software-as-a-service operations, risk auditing and management and international mergers and acquisitions."],
+                            "links"    : [
+                                {
+                                    "image"   : ["https://assets.unisys.com/PublishingImages/Global/Leadership/MathewNewfield320x320.jpg"],
+                                    "websites": [
+                                        {
+                                            "link" : "https://www.unisys.com/about-us/leadership/mathew-newfield",
+                                            "text" : "Information about the CSO from Unisys Official Website"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "tag"      : "CHO",
+                            "patterns" : ["Tell me about CHO", "Tell me about CHRO", "Tell me about the Chief Human Resources Officer", "Tell me about CHO/CHRO"],
+                            "responses": ["Senior Vice President and Chief Human Resources Officer - Katie Ebrahimi \n .Katie Ebrahimi is senior vice president and Chief Human Resources Officer (CHRO) at Unisys. She joined the company in April 2018. As CHRO, she is responsible for leading and operationalizing on a global basis all of Unisys' human capital strategies including organizational design and effectiveness; associate training, evaluation and retention; leadership and career development; diversity; and talent acquisition."],
+                            "links"    : [
+                                {
+                                    "image"   : ["https://assets.unisys.com/PublishingImages/Global/CorporateOfficers/Officer_KatieEbrahimi320x320.jpg"],
+                                    "websites": [
+                                        {
+                                            "link" : "https://www.unisys.com/about-us/leadership/katie-ebrahimi",
+                                            "text" : "Information about the CHO from Unisys Official Website"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "tag"      : "CTO",
+                            "patterns" : ["Tell me about CTO", "Tell me about the Chief Technology Officer"],
+                            "responses": ["Chief Technology Officer and Senior Vice President, Solution Innovation and Architecture - Dwayne L. Allen \n Dwayne L. Allen is chief technology officer and senior vice president, Solution Innovation and Architecture at Unisys. In this role, he drives identification of innovative technologies in cloud, end-user experience and enterprise computing to benefit Unisys clients and their customers. He also oversees integration of those technologies into solutions that Unisys’ global business units provide."],
+                            "links"    : [
+                                {
+                                    "image"   : ["https://assets.unisys.com/PublishingImages/Global/Leadership/DwayneAllen320x320.jpg"],
+                                    "websites": [
+                                        {
+                                            "link" : "https://www.unisys.com/about-us/leadership/dwayne-l-allen",
+                                            "text" : "Information about CTO from Unisys Official Website"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "tag"      : "CMO",
+                            "patterns" : ["Tell me about the CMO", "Tell me about the Chief Marketing Officer"],
+                            "responses": ["Senior Vice President and Chief Marketing Officer - Teresa Poggenpohl \nTeresa Poggenpohl is senior vice president and chief marketing officer at Unisys. She joined the company in May 2021 and is responsible for telling the Unisys story and accelerating awareness for its solutions in helping position the company for future growth."],
+                            "links"    : [
+                                {
+                                    "image"   : ["https://assets.unisys.com/PublishingImages/Global/Leadership/TeresaPoggenpohl_320x320.jpg"],
+                                    "websites": [
+                                        {
+                                            "link" :"https://www.unisys.com/about-us/leadership/teresa-poggenpohl",
+                                            "text" : "Information about CMO from Unisys Official Website"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "tag"      : "CRO",
+                            "patterns" : ["Tell me about the CRO", "Tell me about the Chief Revenue Officer"],
+                            "responses": ["Senior Vice President and Chief Revenue Officer - Maureen Sweeny \nMaureen Sweeny is senior vice president and chief revenue officer at Unisys. In this role, she enhances and extends our existing client relationships as well as drives solution-oriented, advisory-led sales for Digital Workplace Services, Cloud and Infrastructure and Unisys Stealth."],
+                            "links"    : [
+                                {
+                                    "image"   : ["https://assets.unisys.com/PublishingImages/Global/Leadership/MaureenSweeny_320x320.jpg"],
+                                    "websites": [
+                                        {
+                                            "link" : "https://www.unisys.com/about-us/leadership/maureen-sweeny",
+                                            "text" : "Information about CRO from Unisys Official Website"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "tag"      : "CFO",
+                            "patterns" : ["Tell me about the CFO", "Tell me about the Chief Financial Officer"],
+                            "responses": ["Executive Vice President and Chief Financial Officer - Mike Thomson \nMichael M. Thomson is Executive Vice President and Chief Financial Officer of Unisys. He joined the company in December 2015 and is today responsible for all of Unisys' financial functions including controllership, treasury, taxes, internal audit, financial systems, investor relations and M&A as well as strategy."],
+                            "links"    : [
+                                {
+                                    "image"   : ["https://assets.unisys.com/PublishingImages/Global/CorporateOfficers/Officer_MikeThomson320x320.jpg"],
+                                    "websites": [
+                                        {
+                                            "link" : "https://www.unisys.com/about-us/leadership/mike-thomson",
+                                            "text" :"Information about CFO from Unisys Official Website"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "tag"      : "President",
+                            "patterns" : ["Tell me about the President"],
+                            "responses": ["President and Chief Operating Officer - Eric Hutto. \n Eric Hutto was elected president and chief operating officer effective March 2020. From September 2015 to March 2020, he served as senior vice president and president, Enterprise Solutions. Eric joined the company in April 2015 and previously served as vice president/general manager, U.S. & Canada, Unisys Enterprise Solutions. Eric leads the company’s business worldwide and is responsible for sales, client relationships, service delivery and portfolio management."],
+                            "links"    : [
+                                {
+                                    "image"   : ["https://assets.unisys.com/PublishingImages/Global/CorporateOfficers/Officer_EricHutto320x320.jpg?v=2"],
+                                    "websites": [
+                                        {
+                                            "link" : "https://www.unisys.com/about-us/leadership/eric-hutto",
+                                            "text" :"Information about President from Unisys Official Website"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "tag"      : "Vice President",
+                            "patterns" : ["Tell me about the Vice President"],
+                            "responses": ["Vice President, Strategy, Tax and Treasurer - Shalabh Gupta\nVice President and Corporate Controller - Erin Mannix\nPlease visit the official website to know further details."],
+                            "links"    : [
+                                {
+                                    "websites": [
+                                        {
+                                            "link" : "https://www.unisys.com/about-us/leadership",
+                                            "text" :"Information about the Vice Presidents from Unisys Official Website"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "tag"      : "Senior Vice President",
+                            "patterns" : ["Tell me about the Senior Vice President"],
+                            "responses": ["Senior Vice President and General Manager, ClearPath Forward - Gene Chao\nSenior Vice President and Chief Human Resources Officer - Katie Ebrahimi\nSenior Vice President and General Manager, Digital Workplace Services\nSenior Vice President, General Counsel and Secretary\nSenior Vice President, Corporate Services - Lisa Madion\nSenior Vice President and General Manager, Cloud and Infrastructure - Mike Morrison\nSenior Vice President and Chief Security and Infrastructure Officer - Mathew Newfield\nSenior Vice President and Chief Marketing Officer - Teresa Poggenpohl\nSenior Vice President and Chief Revenue Officer - Maureen Sweeny\nPlease visit the official website to know further details."],
+                            "links"    : [
+                                {
+                                    "websites": [
+                                        {
+                                            "link" :"https://www.unisys.com/about-us/leadership",
+                                            "text" :"Information about the Senior Vice President from Unisys Official Website"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "tag"      : "Executive Vice President",
+                            "patterns" : ["Tell me about the Executive Vice President"],
+                            "responses": ["Executive Vice President and Chief Financial Officer - Mike Thomson\nPlease visit the official website to know further details."],
+                            "links"    : [
+                                {
+                                    "websites": [
+                                        {
+                                            "link" :"https://www.unisys.com/about-us/leadership",
+                                            "text" :"Information about Executive Vice Presidents from Unisys Official Website"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "tag"      : "GM",
+                            "patterns" : ["Tell me about the GM", "Tell me about the General Manager"],
+                            "responses": ["Senior Vice President and General Manager, ClearPath Forward - Gene Chao\nSenior Vice President and General Manager, Digital Workplace Services - Leon Gilbert\nSenior Vice President and General Manager, Cloud and Infrastructure - Mike Morrison\n Please visit the official website to know further details."],
+                            "links"    : [
+                                {
+                                    "websites": [
+                                        {
+                                            "link" : "https://www.unisys.com/about-us/leadership",
+                                            "text" : "Information about GM from Unisys Official Website"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag"      : "partners",
+                    "patterns" : ["Who are the partners of Unisys?", "What are the companies in tie-up with Unisys?", "What are the companies in partnership with Unisys?", "What are the companies in alliance with unisys?", "What are the companies in association with unisys?", "What are the companies in a business partnership with Unisys?", "What are the companies that are doing business with Unisys?", "What are the companies in business alliance with Unisys?", "How unisys is in partnership with AWS?", "Explain the alliance of Unisys with AWS", "Explain the partnership of unisys with AWS", "How unisys is in alliance with AWS?", "How unisys is in partnership with ServiceNow?", "Explain the alliance of Unisys with ServiceNow", "Explain the partnership of unisys with ServiceNow", "How unisys is in alliance with ServiceNow?", "How unisys is in partnership with Microsoft?", "Explain the alliance of Unisys with Microsoft", "Explain the partnership of unisys with Microsoft", "How unisys is in alliance with Microsoft?", "How unisys is in partnership with Dell Technologies?", "Explain the alliance of Unisys with Dell Technologies", "Explain the partnership of unisys with Dell Technologies", "How unisys is in alliance with Dell Technologies?"],
+                    "responses": [
+                        {
+                            "tag"      : "general partners",
+                            "patterns" : ["Who are the partners of Unisys?", "What are the companies in tie-up with Unisys?", "What are the companies in partnership with Unisys?", "What are the companies in alliance with unisys?", "What are the companies in association with unisys?", "What are the companies in a business partnership with Unisys?", "What are the companies that are doing business with Unisys?", "What are the companies in business alliance with Unisys?"],
+                            "responses": ["The Unisys Strategic Alliance program enables collaborative innovation and the development of new joint solution offerings, which provide clients cutting-edge products and services in many of the largest industries in the world. Our Alliance Program mission is to create strong and lasting profitable partnerships with key organizations designed to strengthen our clients' businesses. Unisys, as a trusted partner, provides leading technology, software and services companies, the opportunity to build, market, and co-sell value added joint solutions that address our client’s most challenging business requirements. Clients look to Unisys to provide independent advisement, quality services, and essential capabilities to ensure their mission critical projects succeed. The organization is currently in alliance with AWS, Microsoft, Dell Technologies and ServiceNow"],
+                            "links"    : [
+                                {
+                                    "websites": [
+                                        {
+                                            "link" : "https://www.unisys.com/strategic-alliance-partners",
+                                            "text" : "Information about the business partners of Unisys"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "tag"      : "Partnership with AWS",
+                            "patterns" : ["How unisys is in partnership with AWS?", "Explain the alliance of Unisys with AWS", "Explain the partnership of unisys with AWS", "How unisys is in alliance with AWS?"],
+                            "responses": ["Unisys and AWS accelerate the adoption of cloud and cloud services, securely, so our clients can achieve their business goals more quickly and efficiently than ever before. Together, we enable your organization to respond quickly to constituents while incorporating cloud technology and creating predictable revenue streams. Unisys, an Amazon Web Services (AWS) Advanced Consulting partner, protects enterprise network connections to the AWS cloud from cybercriminals. With our AWS’ Government Competency, Unisys enables client’s convenient protection of vital information with the only NSA- and CSIC-certified solution on AWS. Unisys holds the exclusive AWS MSP Collaborates designation and we are also a Well Architected Framework (WAF) partner. We also help our clients develop cloud strategies, create actionable migration plans, design and build cloud environments, and facilitate day-to-day cloud operations and management. Please visit the official website to know further details."],
+                            "links"    : [
+                                {
+                                    "websites": [
+                                        {
+                                            "link" : "https://www.unisys.com/strategic-alliance-partners/aws",
+                                            "text" : "Information about the partnership with AWS"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "tag"      : "Partnership with ServiceNow",
+                            "patterns" : ["How unisys is in partnership with ServiceNow?", "Explain the alliance of Unisys with ServiceNow", "Explain the partnership of unisys with ServiceNow", "How unisys is in alliance with ServiceNow?"],
+                            "responses": ["Unisys is a Global Partner to ServiceNow®, the enterprise cloud company. This strategic alliance delivers integrated Service Management solutions for enterprise clients around the world. Unisys is a ServiceNow Elite Sales Partner. We are also a design partner for IT Operations Management, Field Services and Intelligent Agent, currently responsible for managing some of the largest ServiceNow deployments globally. Unisys is also a ServiceNow Technology Partner where we enable secure operations through the integration of Unisys Stealth with ServiceNow SecOps workflows."],
+                            "links"    : [
+                                {
+                                    "websites": [
+                                        {
+                                            "link" : "https://www.unisys.com/strategic-alliance-partners/servicenow",
+                                            "text" : "Information about the partnership with ServiceNow"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "tag"      : "Partnership with Microsoft",
+                            "patterns" : ["How unisys is in partnership with Microsoft?", "Explain the alliance of Unisys with Microsoft", "Explain the partnership of unisys with Microsoft", "How unisys is in alliance with Microsoft?"],
+                            "responses": ["As a Microsoft Gold Partner, Unisys holds eleven Microsoft Gold and Silver Competencies including Cloud Productivity, Cloud Platform and Application Development. Unisys is a Microsoft Azure Expert MSP partner and Unisys is the titleholder of Azure Innovation Partner of the Year in 2015 and 2017. We are a three-year leader in Gartner’s Magic Quadrant for End-User Outsourcing Services, North America."],
+                            "links"    : [
+                                {
+                                    "websites": [
+                                        {
+                                            "link" : "https://www.unisys.com/strategic-alliance-partners/microsoft",
+                                            "text" : "Information about the partnership with Microsoft"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "tag"      : "Partnership with Dell Technologies",
+                            "patterns" : ["How unisys is in partnership with Dell Technologies?", "Explain the alliance of Unisys with Dell Technologies", "Explain the partnership of unisys with Dell Technologies", "How unisys is in alliance with Dell Technologies?"],
+                            "responses": ["Unisys and Dell Technologies, work with our customers to drive innovation, deliver solutions with global reach and provide seamless service for long-term customer satisfaction. Together, we help customers solve their business challenges with secure solutions reliably and efficiently by providing complete, end-to-end solutions designed even for the most demanding IT environments. Through our partnership, we deliver secure solutions to demanding environments like banking, airline reservations and cargo handling. We address high-transaction environments supporting police, port authorities, government agencies and commercial enterprises worldwide."],
+                            "links"    : [
+                                {
+                                    "websites": [
+                                        {
+                                            "link" : "https://www.unisys.com/strategic-alliance-partners/dellemc",
+                                            "text" : "Information about the partnership with Dell"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag"      : "motto and key goals",
+                    "patterns" : ["Tell me about the motto of the organization", "Tell me about the motto", "Tell me the key goals", "motto", "key goals", "What is the motto of the organization?", "What is the key goal of the organization?", "Tell me the tag line of the company",  "What is the motto of the company?", "What is the key goal of the company?"],
+                    "responses": ["Motto of the Organization / Company is \"Secure Your Tomorrow\"", "\"Secure Your Tomorrow\" - Unisys is a global IT company known for building highly secure, modern digital platforms. We accelerate industry-leading digital workplace services, deliver next-generation cloud and infrastructure services, and provide the world’s most secure operating environment for high-intensity enterprise computing. And, we integrate security into all of our solutions."]
+                },
+                {
+                    "tag"      : "clients",
+                    "patterns" : ["Who are the clients of Unisys?", "Who are the clients of the organization", "Who are the clients of the company?","Tell me about the clients of the company", "Tell me about the clients of the Organization","clients"],
+                    "responses": ["Unisys systems are used for many industrial and government purposes, including banking, check processing, income tax processing, airline passenger reservations, biometric identification, newspaper content management, and shipping port management, as well as providing weather data services. Unisys has around 117 regular clients. Please visit the official website to know further details"],
+                    "links"    : [
+                        {
+                            "websites": [
+                                {
+                                    "link" : "https://www.unisys.com/our-clients",
+                                    "text" : "Currently clients of the Unisys - Official Website"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag"      : "revenue",
+                    "patterns" : ["What is the revenue of the company?", "What is the net income of the company?", "What is the annual earnings of the company?", "What is the revenue of the organization?", "What is the net income of the organization?", "What is the annual earnings of the organization?"],
+                    "responses": ["As per the sources from Wikipedia, the revenue of the company by 2020 was 2.026 Billion USD", "As per the sources from Wikipedia, the Operating Income of the company by 2020 was 87 Million USD and the Net Income of the company by 2020 was 751 Million USD"]
+                }
+            ]
+        },
+        {
+            "tag"      : "teams",
+            "patterns" : ["What are the various teams in the company?", "List of Teams in the company", "List of Teams in Unisys organization","Various Teams in Unisys organization"],
+            "responses": [
+                {
+                        "tag"      : "general",
+                        "patterns" : ["What are the types of teams?","Who are the IT team?","List of Teams in Unisys organization","Various Teams in Unisys organization", "operations of a Operation team","Task of a Operation team","What would a Operation team do?", "functions of a Operation team", "operations of a Project team","Task of a Project team","What would a Project team do?", "functions of a project team", "operations of a Support team","Task of a Support team","What would a Support team do?", "functions of a support team", "operations of a Process team","Task of a Process team","What would a Process team do?", "functions of a process team"],
+                        "responses": ["There are Operations Teams, Project Teams, Support Teams and Process Teams","We have Operations Teams, Project Teams, Support Teams and Process Teams"]
+                },
+                {
+                        "tag"      : "Operation team",
+                        "patterns" : ["operations of a Operation team","Task of a Operation team","What would a Operation team do?", "functions of a Operation team"],
+                        "responses": ["These teams are focused on operating technology infrastructure (such as networks, data centers and Web services), monitoring them and ensuring services and systems are available and performing normally to support business operations"]
+                },
+                {
+                        "tag"      : "Project team",
+                        "patterns" : ["operations of a Project team","Task of a Project team","What would a Project team do?", "functions of a project team"],
+                        "responses": ["Project teams are typically focused on a single release or group of releases, but very rarely “own” a system once it goes live."]
+                },
+                {
+                        "tag"      : "Support team",
+                        "patterns" : ["operations of a Support team","Task of a Support team","What would a Support team do?", "functions of a support team"],
+                        "responses": ["IT support teams are permanent, which (like operations teams) execute IT service management functions to help keep business operations up and running smoothly. The work of these team is also similar to project teams as they also address specific problems."]
+                },
+                {
+                        "tag"      : "Process team",
+                        "patterns" : ["operations of a Process team","Task of a Process team","What would a Process team do?", "functions of a process team"],
+                        "responses": ["These teams (also sometimes known as IT business-support teams) are permanent and tasked with owning, managing and improving the IT systems of a specific business process."]
+                }
+            ]
+        },
+        {
+            "tag"     : "products",
+            "patterns": ["What are the products and services provided by Unisys Corporation?", "List of products developed in Unisys Organization", "List of products and services provided by Unisys Organization", "List of products developed in Unisys Corporation", "List of applications developed in the Unisys Corporation", "List of services provided by the corporation", "List of services provided by the organization",
+                "Tell me about Digital Investors", "What is Digital Investors?", "Describe Digital Investors", "Digital Investors", "Uses of Digital Investors", "Applications of Digital Investors",
+                "Tell me about Unisys Agile Business Suite", "What is Unisys Agile Business Suite?", "Describe Unisys Agile Business Suite", "Unisys Agile Business Suite", "Uses of Unisys Agile Business Suite", "Applications of Unisys Agile Business Suite",
+                "Tell me about Unisys Business Information Server", "What is Unisys Business Information Server?", "Describe Unisys Business Information Server", "Unisys Business Information Server", "Uses of Unisys Business Information Server", "Applications of Unisys Business Information Server",
+                "Tell me about ClearPath AIS", "What is ClearPath AIS?", "Describe ClearPath AIS", "ClearPath AIS", "Uses of ClearPath AIS", "Applications of ClearPath AIS",
+                "Tell me about Unisys ClearPath Forward", "What is Unisys ClearPath Forward?", "Describe Unisys ClearPath Forward", "Unisys ClearPath Forward", "Uses of Unisys ClearPath Forward", "Applications of Unisys ClearPath Forward",
+                "Tell me about Unisys ClearPath MCP", "What is Unisys ClearPath MCP?", "Describe Unisys ClearPath MCP", "Unisys ClearPath MCP", "Uses of Unisys ClearPath MCP", "Applications of Unisys ClearPath MCP",
+                "Tell me about Unisys ClearPath OS 2200", "What is Unisys ClearPath OS 2200?", "Describe Unisys ClearPath OS 2200", "Unisys ClearPath OS 2200", "Uses of Unisys ClearPath OS 2200", "Applications of Unisys ClearPath OS 2200",
+                "Tell me about Unisys CloudForte", "What is Unisys CloudForte?", "Describe Unisys CloudForte", "Unisys CloudForte", "Uses of Unisys CloudForte", "Applications of Unisys CloudForte",
+                "Tell me about Unisys Cyber Risk Management", "What is Unisys Cyber Risk Management?", "Describe Unisys Cyber Risk Management", "Unisys Cyber Risk Management", "Uses of Unisys Cyber Risk Management", "Applications of Unisys Cyber Risk Management",
+                "Tell me about Unisys Data Exchange", "What is Unisys Data Exchange?", "Describe Unisys Data Exchange", "Unisys Data Exchange", "Uses of Unisys Data Exchange", "Applications of Unisys Data Exchange",
+                "Tell me about Unisys Enterprise DevOps Services", "What is Unisys Enterprise DevOps Services?", "Describe Unisys Enterprise DevOps Services", "Unisys Enterprise DevOps Services", "Unisys Enterprise DevOps Services", "Applications of Unisys Enterprise DevOps Services",
+                "Tell me about Unisys InteliServe", "What is Unisys InteliServe?", "Describe Unisys InteliServe", "Unisys InteliServe", "Uses of Unisys InteliServe", "Applications of Unisys InteliServe",
+                "Tell me about Unisys Stealth(Identity)", "What is Unisys Stealth(Identity)?", "Describe Unisys Stealth(Identity)", "Unisys Stealth(Identity)", "Uses of Unisys Stealth(Identity)", "Applications of Unisys Stealth(Identity)",
+                "Tell me about Unisys Stealth(aware)", "What is Unisys Stealth(aware)?", "Describe Unisys Stealth(aware)", "Unisys Stealth(aware)", "Uses of Unisys Stealth(aware)", "Applications of Unisys Stealth(aware)",
+                "Tell me about Unisys Stealth(cloud)", "What is Unisys Stealth(cloud)?", "Describe Unisys Stealth(cloud)", "Unisys Stealth(cloud)", "Uses of Unisys Stealth(cloud)", "Applications of Unisys Stealth(cloud)",
+                "Tell me about Unisys Stealth(mobile)", "What is Unisys Stealth(mobile)?", "Describe Unisys Stealth(mobile)", "Unisys Stealth(mobile)", "Uses of Unisys Stealth(mobile)", "Applications of Unisys Stealth(mobile)",
+                "Tell me about Unisys Stealth(core)", "What is Unisys Stealth(core)?", "Describe Unisys Stealth(core)", "Unisys Stealth(core)", "Uses of Unisys Stealth(core)", "Applications of Unisys Stealth(core)"
+            ],
+            "responses":[
+                {
+                    "tag"      : "general",
+                    "patterns" : ["What are the products and services provided by Unisys Corporation?", "List of products developed in Unisys Organization", "List of products and services provided by Unisys Organization", "List of products developed in Unisys Corporation", "List of applications developed in the Unisys Corporation", "List of services provided by the corporation", "List of services provided by the organization"],
+                    "responses": ["Following are Products and Services provided by the Unisys Corporation:\nDigital Investors, Unisys Agile Business Suite, Unisys Business Information Server, Unisys ClearPath AIS, Unisys ClearPath Forward, Unisys ClearPath MCP, Unisys ClearPath OS 2200, Unisys CloudForte, Unisys Cyber Risk Management, Unisys Data Exchange, Unisys Enterprise DevOps Services, Unisys InteliServe, Unisys Stealth(aware), Unisys Stealth(Cloud), Unisys Stealth(Identity), Unisys Stealth(Core) and Unisys Stealth(mobile)"]
+                },
+                {
+                    "tag"      : "DI",
+                    "patterns" : ["Tell me about Digital Investors", "What is Digital Investors?", "Describe Digital Investors", "Digital Investors", "Uses of Digital Investors", "Applications of Digital Investors"],
+                    "responses": ["Digital Investigator offers justice, law enforcement and national security agencies tools and capabilities to fight crime."]
+                },
+                {
+                    "tag"      : "UABS",
+                    "patterns" : ["Tell me about Unisys Agile Business Suite", "What is Unisys Agile Business Suite?", "Describe Unisys Agile Business Suite", "Unisys Agile Business Suite", "Uses of Unisys Agile Business Suite", "Applications of Unisys Agile Business Suite"],
+                    "responses": ["Unisys Agile Business Suite (AB Suite®) is a unique Model Driven development environment for mission critical solutions. It helps you capitalize on change rather than simply respond to it. It supports design, development, generation, and ongoing maintenance of high-performance, highly available, enterprise-class applications."]
+                },
+                {
+                    "tag"      : "UBIS",
+                    "patterns" : ["Tell me about Unisys Business Information Server", "What is Unisys Business Information Server?", "Describe Unisys Business Information Server", "Unisys Business Information Server", "Uses of Unisys Business Information Server", "Applications of Unisys Business Information Server"],
+                    "responses": ["The BIS suite offers enterprises a powerful development and deployment foundation for quickly turning raw data into actionable intelligence."]
+                },
+                {
+                    "tag"      : "ClearPathAIS",
+                    "patterns" : ["Tell me about ClearPath AIS", "What is ClearPath AIS?", "Describe ClearPath AIS", "ClearPath AIS", "Uses of ClearPath AIS", "Applications of ClearPath AIS"],
+                    "responses": ["ClearPath Application Integration Services product is designed to make it easier for you to develop mission-critical cross-platform applications."]
+                },
+                {
+                    "tag"      : "ClearPathForward",
+                    "patterns" : ["Tell me about Unisys ClearPath Forward", "What is Unisys ClearPath Forward?", "Describe Unisys ClearPath Forward", "Unisys ClearPath Forward", "Uses of Unisys ClearPath Forward", "Applications of Unisys ClearPath Forward"],
+                    "responses": ["As the system of record at the heart of your business and IT operations, your Unisys ClearPath Forward® system will play a central role in supporting your ongoing digital business transformation. The vast array of ClearPath Forward® products work together to enable this transformation – and deliver the unmatched security, scalability, reliability, capacity, availability, and data integrity needed to handle some of the world’s largest workloads with ease."],
+                    "links"    : [
+                        {
+                            "websites": [
+                                {
+                                    "link":"https://www.unisys.com/offerings/clearpath-forward/clearpath-forward-products",
+                                    "text" : "Information about ClearPathForward products from Unisys Website"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag"      : "ClearPathMCP",
+                    "patterns" : ["Tell me about Unisys ClearPath MCP", "What is Unisys ClearPath MCP?", "Describe Unisys ClearPath MCP", "Unisys ClearPath MCP", "Uses of Unisys ClearPath MCP", "Applications of Unisys ClearPath MCP"],
+                    "responses": ["ClearPath® MCP is the complete, premier operating environment for ClearPath Forward® Libra systems and ClearPath MCP Software Series products."]
+                },
+                {
+                    "tag"      : "ClearPathOS",
+                    "patterns" : ["Tell me about Unisys ClearPath OS 2200", "What is Unisys ClearPath OS 2200?", "Describe Unisys ClearPath OS 2200", "Unisys ClearPath OS 2200", "Uses of Unisys ClearPath OS 2200", "Applications of Unisys ClearPath OS 2200"],
+                    "responses": ["ClearPath® OS 2200 is the complete, premier operating environment for ClearPath Forward® Dorado systems."]
+                },
+                {
+                    "tag"      : "CloudForte",
+                    "patterns" : ["Tell me about Unisys CloudForte", "What is Unisys CloudForte?", "Describe Unisys CloudForte", "Unisys CloudForte", "Uses of Unisys CloudForte", "Applications of Unisys CloudForte"],
+                    "responses": ["Unisys CloudForte® accelerates your digital transformation and maximizes innovation in the cloud without sacrificing security or governance. CloudForte® enables you to accelerate your success with self-service blueprints, automated governance and workflow, automated provisioning, security, reporting and advanced analytics."]
+                },
+                {
+                    "tag"      : "CyberRiskManagement",
+                    "patterns" : ["Tell me about Unisys Cyber Risk Management", "What is Unisys Cyber Risk Management?", "Describe Unisys Cyber Risk Management", "Unisys Cyber Risk Management", "Uses of Unisys Cyber Risk Management", "Applications of Unisys Cyber Risk Management"],
+                    "responses": ["With TrustCheck™, Unisys transforms the cyber risk conversation, enabling organizations to align their security initiatives with their business strategy. TrustCheck™ describes the likelihood and impact of a cyber-event across a multitude of attack patterns and threats."]
+                },
+                {
+                    "tag"      : "DataExchange",
+                    "patterns" : ["Tell me about Unisys Data Exchange", "What is Unisys Data Exchange?", "Describe Unisys Data Exchange", "Unisys Data Exchange", "Uses of Unisys Data Exchange", "Applications of Unisys Data Exchange"],
+                    "responses": ["Unisys Data Exchange is data integration software that is designed to help organizations address these issues. It is available as a software option for ClearPath MCP and ClearPath OS 2200 servers."]
+                },
+                {
+                    "tag"      : "EnterpriseDevOpsServices",
+                    "patterns" : ["Tell me about Unisys Enterprise DevOps Services", "What is Unisys Enterprise DevOps Services?", "Describe Unisys Enterprise DevOps Services", "Unisys Enterprise DevOps Services", "Unisys Enterprise DevOps Services", "Applications of Unisys Enterprise DevOps Services"],
+                    "responses": ["Enabling digital business through Enterprise Scale Agility and Automation."]
+                },
+                {
+                    "tag"      : "InteliServe",
+                    "patterns" : ["Tell me about Unisys InteliServe", "What is Unisys InteliServe?", "Describe Unisys InteliServe", "Unisys InteliServe", "Uses of Unisys InteliServe", "Applications of Unisys InteliServe"],
+                    "responses": ["The InteliServe platform provides an integrated suite of best-in-class technologies that provide omni-channel support, advanced analytics, automation, artificial intelligence (AI), machine learning and identity authentication."]
+                },
+                {
+                    "tag"      : "Stealth(aware)",
+                    "patterns" : ["Tell me about Unisys Stealth(aware)", "What is Unisys Stealth(aware)?", "Describe Unisys Stealth(aware)", "Unisys Stealth(aware)", "Uses of Unisys Stealth(aware)", "Applications of Unisys Stealth(aware)"],
+                    "responses": ["Stealth(aware)™ provides you with powerful live discovery, modeling and visualization to see network relationships and use micro-segmentation to isolate trusted entities. Increased traffic insight informs your decisions to permit, restrict or block access to sensitive data—then automatically deploy those policies to endpoints."]
+                },
+                {
+                    "tag"      : "Stealth(cloud)",
+                    "patterns" : ["Tell me about Unisys Stealth(cloud)", "What is Unisys Stealth(cloud)?", "Describe Unisys Stealth(cloud)", "Unisys Stealth(cloud)", "Uses of Unisys Stealth(cloud)", "Applications of Unisys Stealth(cloud)"],
+                    "responses": ["Stealth(cloud)™ easily extends protection across public and private networks. Identity-driven micro-segmentation isolates critical assets and data encryption protects data in motion to reduce attack surfaces on virtual machines. Stealth(cloud)™ supports leading cloud platforms such as Amazon Web Services and Microsoft Azure."]
+                },
+                {
+                    "tag"      : "Stealth(mobile)",
+                    "patterns" : ["Tell me about Unisys Stealth(mobile)", "What is Unisys Stealth(mobile)?", "Describe Unisys Stealth(mobile)", "Unisys Stealth(mobile)", "Uses of Unisys Stealth(mobile)", "Applications of Unisys Stealth(mobile)"],
+                    "responses": ["Stealth(mobile)™ extends Stealth(core)™ protection to mobile environments, closing security gaps outside the scope of enterprise mobility management (EMM) solutions."]
+                },
+                {
+                    "tag"      : "Stealth(Identity)",
+                    "patterns" : ["Tell me about Unisys Stealth(Identity)", "What is Unisys Stealth(Identity)?", "Describe Unisys Stealth(Identity)", "Unisys Stealth(Identity)", "Uses of Unisys Stealth(Identity)", "Applications of Unisys Stealth(Identity)"],
+                    "responses": ["Flexible biometric identity management delivers stronger security and frictionless experiences"]
+                },
+                {
+                    "tag"      : "Stealth(core)",
+                    "patterns" : ["Tell me about Unisys Stealth(core)", "What is Unisys Stealth(core)?", "Describe Unisys Stealth(core)", "Unisys Stealth(core)", "Uses of Unisys Stealth(core)", "Applications of Unisys Stealth(core)"],
+                    "responses": ["Stealth(core)™ provides foundational capabilities —identity-based microsegmentation, cryptographic cloaking and encryption of data in motion — for transforming your existing networks into Zero Trust Networks without the added implementation and management complexity."]
+                }
+            ]
+        },
+        {
+            "tag"     : "designations",
+            "patterns": [ "operations of a Business Analyst","task of a Business Analyst","what would a business analyst do ?", "operations of a Project Manager","Task of a Project Manager","What would a Project Manager do ?",
+                "operations of a UX Designer","Task of a UX Designer","What would a UX Designer do ?", "operations of a Front-end Developer","Task of a Front-end Developer","What would a Front-end Developer do ?",
+                "operations of a Back-end Developer","Task of a Back-end Developer","What would a Back-end Developer do ?", "operations of a Quality Assurance Engineer","Task of a Quality Assurance Engineer","What would a Quality Assurance Engineer do?",
+                "Roles played by an employee in a project","List of Designations in Unisys organization", "Various Designations in Unisys organization", "Roles played by the employee in the organization", "List of Designations in the company", "Various Designations in the company", "Roles played by the employee in the company"],
+            "responses":[
+                {
+                    "tag"      : "general",
+                    "patterns" : ["Roles played by an employee in a project","List of Designations in Unisys organization", "Various Designations in Unisys organization", "Roles played by the employee in the organization", "List of Designations in the company", "Various Designations in the company", "Roles played by the employee in the company"],
+                    "responses": ["Some of the employee designations include Business Analyst, Project Manager, UX Designer, Front-end Developers, Back-end Developers and Quality Assurance Engineer","Roles played by the employees include Business Analyst, Project Manager, UX Designer, Front-end Developers, Back-end Developers and Quality Assurance Engineer"]
+                },
+                {
+                    "tag"      : "Business Analyst",
+                    "patterns" : ["operations of a Business Analyst","task of a Business Analyst","what would a business analyst do ?"],
+                    "responses": ["Business analyst is a member of a product development team who analyzes the business domain, documents its processes and systems, outlines business requirements, and matches a software business model with the software being built."]
+                },
+                {
+                    "tag"      : "Project Manager",
+                    "patterns" : ["operations of a Project Manager","Task of a Project Manager","What would a Project Manager do ?"],
+                    "responses": ["Software project manager defines the requirements of the project, builds the project team, lays out a blue print for the whole project including the project scope and parameters, clearly communicates the goals of the project to the team"]
+                },
+                {
+                    "tag"      : "UX Designer",
+                    "patterns" : ["operations of a UX Designer","Task of a UX Designer","What would a UX Designer do ?"],
+                    "responses": ["UX Developers must have a great understanding of user behavior and can be viewed as part psychologist and part web developer","UX developer is responsible for the website or application experience of visitors"]
+                },
+                {
+                    "tag"      : "Front-end Developer",
+                    "patterns" : ["operations of a Front-end Developer","Task of a Front-end Developer","What would a Front-end Developer do ?"],
+                    "responses": ["Front-end Developer be responsible for implementing visual elements that are visible from the computer users vantage point within a web application.","Front-end Developer will be responsible for the translation of UI/UX design wireframes to actual code."]
+                },
+                {
+                    "tag"      : "Back-end Developer",
+                    "patterns" : ["operations of a Back-end Developer","Task of a Back-end Developer","What would a Back-end Developer do ?"],
+                    "responses": ["Back-end web developer is responsible for server-side web application logic and integration of the work front-end developers do","Back-end developers are usually write the web services and APIs used by front-end developers and mobile application developers."]
+                },
+                {
+                    "tag"      : "Quality Assurance Engineer",
+                    "patterns" : ["operations of a Quality Assurance Engineer","Task of a Quality Assurance Engineer","What would a Quality Assurance Engineer do ?"],
+                    "responses": ["Software quality assurance engineer is someone who monitors every phase of the software development process so as to ensure design quality, making sure that the software adheres to the standards set by the development company."]
+                }
+            ]
+        },
+        {
+            "tag"     : "things to be learned",
+            "patterns": ["I am a new joinee, I would like to know what are skills I am supposed to have and what are all the programming languages I should learn", "Skills to be possessed", "Skills to be obtained", "skills to be learned", "What are all the programming languages I am supposed to learn?", "What are the programming languages I am supposed to practice?",
+                "things to be learned to become Frontend Developer", "Skills to be developed to become Frontend Developer", "Programmings languages to be known to become Frontend Developer", "Skills a Frontend Developer expected to have", "Frontend Development skills", "I want to learn Frontend Development", "I want to learn Frontend Development skills", "I want to learn programming languages that are required to do Frontend development",
+                "things to be learned to become Backend Developer", "Skills to be developed to become Backend Developer", "Programmings languages to be known to become Backend Developer", "Skills a Backend Developer expected to have", "Backend Development skills", "I want to learn Backend Development", "I want to learn Backend Development skills", "I want to learn programming languages that are required to do Backend development"
+            ],
+            "responses":[
+                {
+                    "tag"      : "general",
+                    "patterns" : ["I am a new joinee, I would like to know what are skills I am supposed to have and what are all the programming languages I should learn", "Skills to be possessed", "Skills to be obtained", "skills to be learned", "What are all the programming languages I am supposed to learn?", "What are the programming languages I am supposed to practice?"],
+                    "responses": ["Employees are expected to have a basic knowledge on various fields of Computer Science and Information Technology, like DBMS, Data Structures and Algorithms, Operating Systems, Networking and Information Security. Links for the courses on these topics are listed below", "Employees are supposed to have a basic knowledge on various fields of Computer Science and Information Technology, like DBMS, Data Structures and Algorithms, Operating Systems, Networking and Information Security. Links for the courses on these topics are listed below", "I have listed links for the courses to learn the basics in various fields of Computer Science."],
+                    "links"    : [
+                        {
+                            "websites": [{
+                                "link" : "https://www.udemy.com/course/datastructurescncpp/",
+                                "text" : "Course on Data structures and Algorithms"
+                            },
+                            {
+                                "link":"https://www.udemy.com/course/java-11-the-basics-data-structures-and-algorithms-and-oop/",
+                                "text":"Course on Data structures and Algorithms"
+                            },
+                            {
+                                "link":"https://www.udemy.com/course/basics-of-database-management-system-2021/",
+                                "text": "Course on DBMS"
+                            },
+                            {
+                                "link" : "https://www.udemy.com/course/introduction-to-mysql-database/",
+                                "text" : "Course on DBMS"
+                            },
+                            {
+                                "link":"https://www.udemy.com/course/learn-linux-in-5-days/",
+                                "text":"Course on Operating Systems"
+                            }, 
+                            {
+                                "link":"https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/",
+                                "text":"Course on Computer Networks"
+                            },
+                            {
+                                "link":"https://www.udemy.com/course/network-security-course/",
+                                "text":"Course on Network Security"
+                            }
+                        ]
+                        }
+                    ]
+                },
+                {
+                    "tag"      : "FrontendDeveloper",
+                    "patterns" : ["things to be learned to become Frontend Developer", "Skills to be developed to become Frontend Developer", "Programmings languages to be known to become Frontend Developer", "Skills a Frontend Developer expected to have", "Frontend Development skills", "I want to learn Frontend Development", "I want to learn Frontend Development skills", "I want to learn programming languages that are required to do Frontend development"],
+                    "responses": ["A better knowledge on scripting and programming languages and frameworks like, HTML, JavaScript, CSS, Bootstrap, jQuery, JSON, AngularJS and ReactJS would help you to excel as a Frontend Developer", "Skills in scripting and programming languages and frameworks like, HTML, JavaScript, CSS, Bootstrap, jQuery, JSON, AngularJS and ReactJS would help you to improve as a Frontend Developer"],
+                    "links"    : [
+                        {
+                            "websites": [
+                                {
+                                    "link":"https://www.udemy.com/course/web-design-for-beginners-real-world-coding-in-html-css/",
+                                    "text":"Course on Web Page Creation using HTML and CSS"
+                                }, 
+                                {
+                                    "link":"https://www.udemy.com/course/bootstrap-4-from-scratch-with-5-projects/",
+                                    "text":"Course on Bootstrap"
+                                }, {
+                                    "link":"https://www.udemy.com/course/the-complete-javascript-course/",
+                                    "text":"Course on JS"
+                                }, 
+                                {
+                                    "link":"https://www.udemy.com/course/jquery-course/",
+                                    "text":"Course on jQuery"
+                                }, 
+                                {
+                                    "link":"https://www.udemy.com/course/the-complete-guide-to-angular-2/",
+                                    "text":"Course on AngularJS"
+                                }, 
+                                {
+                                    "link":"https://www.udemy.com/course/react-the-complete-guide-incl-redux/",
+                                    "text":"Course on ReactJS"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag"      : "BackendDeveloper",
+                    "patterns" : ["things to be learned to become Backend Developer", "Skills to be developed to become Backend Developer", "Programmings languages to be known to become Backend Developer", "Skills a Backend Developer expected to have", "Backend Development skills", "I want to learn Backend Development", "I want to learn Backend Development skills", "I want to learn programming languages that are required to do Backend development"],
+                    "responses": ["A better knowledge on programming languages and frameworks like, NodeJS, PHP, Python, Java and DBMS would help you to excel as a Backend Developer.", "Skills in programming languages and frameworks like, NodeJS, PHP, Java and DBMS would help you to improve as a Backend Developer"],
+                    "links"    : [
+                        {
+                            "websites": [
+                                {
+                                    "link":"https://www.udemy.com/course/the-complete-nodejs-developer-course-2/",
+                                    "text" : "Course on NodeJS"
+                                }, 
+                                {
+                                    "link":"https://www.udemy.com/course/complete-course-of-java-server-pages-jsp-programming/",
+                                    "text": "Course on JSP"
+                                }, 
+                            {
+                                "link":"https://www.udemy.com/course/the-complete-php-full-stack-web-developer-bootcamp/",
+                                "text":"Course on full stack development using PHP"
+                            }]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tag"     : "clubs",
+            "patterns": ["What are the Various clubs in Unisys","List of clubs in Unisys organization","Various clubs in Unisys organization","Unisys Clubs",
+                "Activities of Healthy Living Club","Events conducted in Healthy Living Club","Get-together by Healthy Living Club",
+                "Activities of Investment Club","Events conducted in Investment Club","Get-together by Investment Club",
+                "Activities of Sports Club","Events conducted in Sports Club","Get-together by Sports Club"
+            ],
+            "responses" : [
+                {
+                        "tag"      : "general",
+                        "patterns" : ["What are the Various clubs in Unisys","List of clubs in Unisys organization","Various clubs in Unisys organization","Unisys Club"],
+                        "responses": ["There are Healthy Living Club, Investment Club, Book Club and Sports Club in Unisys", "We have Healthy Living Club, Investment Club, Book Club and Sports Club in Unisys"]
+                },
+                {
+                        "tag"      : "Healthy Living Club",
+                        "patterns" : ["Activities of Healthy Living Club","Events conducted in Healthy Living Club","Get-together by Healthy Living Club"],
+                        "responses": ["From sharing healthy recipe ideas to enjoying 30-minutes of yoga to minimize stress levels, employees can focus on healthy living by forming a club in the workplace.","The healthy living club can meet to share healthy, baked snacks, train together for marathons, take after-work walks through the neighborhood and discuss and implement ways to make the workplace healthier."]
+                },
+                {
+                        "tag"      : "Investment Club",
+                        "patterns" : ["Activities of Investment Club","Events conducted in Investment Club","Get-together by Investment Club"],
+                        "responses": ["Employees who want to learn more about investing may take an interest in a workplace investment club","The club works together to identify potentially profitable stocks, then pools together a designated amount of money as a contribution toward the stocks.","Employees can set up an account to keep track of the money they earn and lose."]
+                },
+                {
+                        "tag"      : "Book Club",
+                        "patterns" : ["Activities of Book Club","Events conducted in Book Club","Get-together by Book Club"],
+                        "responses": ["Employees can read business-specific books on topics such as marketing, management, leadership, creativity or motivation.","There are a variety of book clubs designed to accommodate readers' diverse interests that you can use to model a book club for your company."]
+                },
+                {
+                        "tag"      : "Sports Club",
+                        "patterns" : ["Activities of Sports Club","Events conducted in Sports Club","Get-together by Sports Club"],
+                        "responses": ["We encourage physical fitness, healthy living and team work by organizing a morning or evening sports club for Employees","We basically focus on one sport, such as softball, if the majority of your employees agree, or you can play a different sport each time you meet"]
+                }
+            ]
+        },
+        {
+            "tag"      : "food court",
+            "patterns" : ["Unisys canteen","Unisys food court","What are the food that is available for Breakfast?","What are the food that is available for Lunch?","What are the food that is available for Dinner?","need a coffee","need a tea","need a cool-drink"],
+            "responses": ["They is a food court available at Basement of the building, Kindly check it out!"]
+        },
+        {
+            "tag"     : "work culture",
+            "patterns": [
+                "What is the Unisys work culture like?",
+                "Tell me about the work culture of Unisys",
+                "What are the core values of the company?",
+                "What is the work motto of Unisys?"
+            ],
+            "responses": [
+                "Integrity, innovation, diversity, recognition and learning – these are the soul of our culture. At Unisys, people are the culture and together we have created the ethos of respect, openness and a diverse workspace. Together we are amazing!"
+            ],
+            "links": [
+                {
+                    "websites": [
+                        {
+                            "link" : "https://www.unisys.co.in/aboutus/unisys-india-overview/life-at-unisys-india/culture",
+                            "text" : "Life at Unisys - Work Culture"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tag"     : "events",
+            "patterns": [
+                "What are the events happening at Unisys?",
+                "What events is Unisys participating in?",
+                "What are some upcoming events the company is participating in?"
+            ],
+            "responses": [
+                "Due to COVID-19 restrictions, Unisys is not participating in face-to-face events at this time. Check out the latest virtual events we are taking part in."
+            ],
+            "links": [
+                {
+                    "websites": [
+                        {
+                            "link" : "https://www.unisys.com/events",
+                            "text": "Events organized in Unisys"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tag"     : "history",
+            "patterns": [
+                "Tell me about the company history",
+                "What is the history of Unisys?",
+                "I would like to know about the company history"
+            ],
+            "responses": [
+                "Unisys is built on nearly a century-and-a-half of game-changing innovation. Throughout our company history, we have enhanced people’s lives by bringing technological innovation to businesses and governments around the world with the singular goal of securing your tomorrow."
+            ],
+            "links": [
+                {
+                    "websites": [
+                        {
+                            "link":"https://www.unisys.com/aboutus/company-history",
+                            "text":"History of the company"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tag"     : "research",
+            "patterns": [
+                "What research does Unisys conduct?",
+                "Tell me about the research happening at Unisys",
+                "I want to know about the research being conducted in the company"
+            ],
+            "responses": [
+                "Unisys conducts research worldwide on the key challenges and opportunities facing businesses and governments in secure digital transformation. These findings present a unique view of the global technology landscape and provide valuable information to inform your successful modernization strategy."
+            ],
+            "links": [
+                {
+                    "websites": [
+                        {
+                            "link":"https://www.unisys.com/insights/research",
+                            "text":"Research programmes happening in Unisys"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tag"     : "blogs and podcast",
+            "patterns": [
+                "I want to check out the Unisys blog",
+                "Show me the Unisys blog",
+                "Does Unisys have a podcast?",
+                "Where can I find the Unisys podcast?"
+            ],
+            "responses": [
+                "Check out the Unisys blog for latest articles and podcasts on cutting-edge topics such as cloud computing, IT trends, security and more."
+            ],
+            "links": [
+                {
+                    "websites": [
+                        {
+                            "link":"https://blogs.unisys.com/",
+                            "text":"Blogs and Podcasts"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tag"     : "technical contest",
+            "patterns": [
+                "What activities does Unisys conduct?",
+                "Does Unisys conduct any technical contests?",
+                "What contest does Unisys conduct for engineering students?"
+            ],
+            "responses": [
+                "Cloud 20/20™ is one of the biggest technical project contests of its kind in India, with close to 50,000 individual member registrations since 2009. It is one of India's most anticipated technical contests for engineering students that has garnered the attention of some of the best minds in the country."
+            ],
+            "links": [
+                {
+                    "websites": [
+                        {
+                            "link" : "https://www.unisys.co.in/aboutus/unisys-india-overview/cloud-20-20",
+                            "text" : "About cloud 20/20"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tag"     : "achievements",
+            "patterns": [
+                "What are the company achievements?",
+                "Which awards has Unisys won?",
+                "What are the awards and recognitions won by Unisys?",
+                "Tell me about the achievements of Unisys",
+                "I want to know about the achievements of Unisys"
+            ],
+            "responses": [
+                "Unisys has won multiple awards and recognitions over its successful history."
+            ],
+            "links": [
+                {
+                    "websites": [
+                        {
+                            "link":"https://www.unisys.com/awards",
+                            "text":"Awards and Recognitions"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tag"     : "career options",
+            "patterns": [
+                "What are the career options available at Unisys?",
+                "What are the career opportunities in the company?",
+                "What are the job opportunities in the company?",
+                "What are the jobs openings in corporate?",
+                "What are the jobs openings in field services?",
+                "What are the jobs openings in help desk?",
+                "What are the jobs openings in IT support?",
+                "What are the jobs openings in pre-sales?",
+                "What are the jobs openings in sales?",
+                "What are the jobs openings in security services?",
+                "What are the jobs openings in cloud services?",
+                "What are the jobs openings in application services?",
+                "What are the jobs openings for software engineers?",
+                "What are the jobs openings in systems software?",
+                "What are the jobs openings in applications software?",
+                "What are the jobs openings in product development?",
+                "What are the jobs openings in service delivery?",
+                "What are the jobs openings in account management?",
+                "What are the jobs openings in project management?",
+                "What are the jobs openings in account and project management?",
+                "What are the career opportunities for fresh graduates?",
+                "What are the jobs openings for students?",
+                "What are the entry-level jobs openings?",
+                "What are the internship opportunities?",
+                "I'm looking for other jobs",
+                "What are the other job openings?"
+            ],
+            "responses": [
+                {
+                    "tag": "general statements",
+                    "patterns": [
+                        "What are the career options available at Unisys?",
+                        "What are the career opportunities in the company?",
+                        "What are the job opportunities in the company?"
+                    ],
+                    "responses": [
+                        "At Unisys, we have a host of opportunities for you. Pick a category based on your passion and interests to find job listings."
+                    ],
+                    "links": [
+                        {
+                            "websites": [
+                                {
+                                    "link":"https://jobs.unisys.com/us/en",
+                                    "text": "Career Opportunities in Unisys"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag": "corporate",
+                    "patterns": [
+                        "What are the jobs openings in corporate?"
+                    ],
+                    "responses": [
+                        "Go through the list of jobs in the link provided to select a job suitable for you."
+                    ],
+                    "links": [
+                        {
+                            "websites": [
+                                {
+                                    "link" : "https://jobs.unisys.com/us/en/c/corporate-jobs",
+                                    "text" : "Career Opportunities in Unisys - Corporate Jobs"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag": "field services",
+                    "patterns": [
+                        "What are the jobs openings in field services?"
+                    ],
+                    "responses": [
+                        "Go through the list of jobs in the link provided to select a job suitable for you."
+                    ],
+                    "links": [
+                        {
+                            "websites": [
+                                {
+                                    "link":"https://jobs.unisys.com/us/en/c/field-services-jobs",
+                                    "text": "Career Opportunities in Unisys - Field Services Jobs"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag": "help and support",
+                    "patterns": [
+                        "What are the jobs openings in help desk?",
+                        "What are the jobs openings in IT support?"
+                    ],
+                    "responses": [
+                        "Go through the list of jobs in the link provided to select a job suitable for you."
+                    ],
+                    "links": [
+                        {
+                            "websites": [
+                                {
+                                    "link":"https://jobs.unisys.com/us/en/c/help-desk-it-support-jobs",
+                                    "text":"Help desk / IT Support Jobs"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag": "sales",
+                    "patterns": [
+                        "What are the jobs openings in pre-sales?",
+                        "What are the jobs openings in sales?"
+                    ],
+                    "responses": [
+                        "Go through the list of jobs in the link provided to select a job suitable for you."
+                    ],
+                    "links": [
+                        {
+                            "websites": [
+                                {
+                                    "link":"https://jobs.unisys.com/us/en/c/presalessales-jobs",
+                                    "text":"Career Opportunities in Unisys - Pre-sales Jobs"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag": "application services",
+                    "patterns": [
+                        "What are the jobs openings in security services?",
+                        "What are the jobs openings in cloud services?",
+                        "What are the jobs openings in application services?"
+                    ],
+                    "responses": [
+                        "Go through the list of jobs in the link provided to select a job suitable for you."
+                    ],
+                    "links": [
+                        {
+                            "websites": [
+                                {
+                                    "link":"https://jobs.unisys.com/us/en/c/security-cloud-applications-services-jobs",
+                                    "text":"Career Opportunities in Unisys"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag": "software engineers",
+                    "patterns": [
+                        "What are the jobs openings for software engineers?",
+                        "What are the jobs openings in systems software?",
+                        "What are the jobs openings in applications software?",
+                        "What are the jobs openings in product development?"
+                    ],
+                    "responses": [
+                        "Go through the list of jobs in the link provided to select a job suitable for you."
+                    ],
+                    "links": [
+                        {
+                            "websites": [
+                                {
+                                    "link" : "https://jobs.unisys.com/us/en/c/software-engineers-systems-applications-product-development-jobs",
+                                    "text" : "Job opportunities for Software Developers"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag": "delivery and project management",
+                    "patterns": [
+                        "What are the jobs openings in service delivery?",
+                        "What are the jobs openings in account management?",
+                        "What are the jobs openings in project management?",
+                        "What are the jobs openings in account and project management?"
+                    ],
+                    "responses": [
+                        "Go through the list of jobs in the link provided to select a job suitable for you."
+                    ],
+                    "links": [
+                        {
+                            "websites": [
+                                {
+                                    "link":"https://jobs.unisys.com/us/en/c/transition-service-delivery-account-project-management-jobs",
+                                    "text":"Delivery and Project Management Jobs"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag": "students",
+                    "patterns": [
+                        "What are the career opportunities for fresh graduates?",
+                        "What are the jobs openings for students?",
+                        "What are the entry-level jobs openings?",
+                        "What are the internship opportunities?"
+                    ],
+                    "responses": [
+                        "Go through the list of jobs in the link provided to select a job suitable for you."
+                    ],
+                    "links": [
+                        {
+                            "websites": [
+                                {
+                                    "link":"https://jobs.unisys.com/us/en/c/early-careersstudents-jobs",
+                                    "text": "Career Opportunities in Unisys"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tag": "other",
+                    "patterns": [
+                        "I'm looking for other jobs",
+                        "What are the other job openings?"
+                    ],
+                    "responses": [
+                        "Go through the list of jobs in the link provided to select a job suitable for you."
+                    ],
+                    "links": [
+                        {
+                            "websites": [
+                                {
+                                    "link":"https://jobs.unisys.com/us/en/c/other-jobs",
+                                    "text":"Other Job opportunities"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tag"     : "life at Unisys",
+            "patterns": [
+                "What is life at Unisys like?",
+                "I want to know about life at Unisys",
+                "Tell me about life at Unisys"
+            ],
+            "responses": [
+                "At Unisys we encourage innovation, ideation and entrepreneurial spirit to empower our associates to dream, ideate and create. If you enjoy being innovative and spending time finding problems to solve, Unisys India is the right place for you."
+            ],
+            "links": [
+                {
+                    "websites": [
+                        {
+                            "link":"https://www.unisys.co.in/aboutus/unisys-india-overview/life-at-unisys-india",
+                            "text":"Life at Unisys - Work Culture"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "tag"     : "benefits",
+            "patterns": [
+                "What are the benefits at Unisys?",
+                "Tell me about employee benefits",
+                "What benefits are available to me?"
+            ],
+            "responses": [
+                "Our industry-leading associates’ benefits package caters to the needs of the diverse workforce across generations. It offers choices and flexibility allowing you to choose and customize according to your needs rather than a one-size-fits-all approach."
+            ],
+            "links": [
+                {
+                    "websites": [
+                        {
+                            "link":"https://www.unisys.co.in/aboutus/unisys-india-overview/life-at-unisys-india/benefits",
+                            "text":"Employee Benefits"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
